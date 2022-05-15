@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <link href='css/nodeCursor.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src=".nodecursor-jquery.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style media="screen">
+    @media (max-width: 480px) {
+      .footer {
+        display: none;
+      }
+
+      .fadecontainer,
+      #text {
+        width: 100vw;
+      }
+
+      #text {
+        margin-left: 25px;
+      }
+
+      .fadecontainer h1 {
+        font-size: 6vw;
+      }
+
+
+      * {
+        font-size: 3.4vw;
+      }
+
+      .mainPage {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .fadecontainer h1 {
+        font-size: 6vw;
+      }
+
+
+
+
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+      * {
+        font-size: 3.3vw;
+      }
+
+      .footer {
+        display: none;
+      }
+
+      .fadecontainer,
+      #text {
+        width: 100vw;
+      }
+
+      #text {
+        margin-left: 25px;
+      }
+
+      .fadecontainer h1 {
+        font-size: 6vw;
+      }
+
+      .button {}
+
+
+    }
+
+    @media (max-width: 1265px) {
+      .footer {
+        display: none;
+      }
+
+      #welcome,
+      #sd {
+        font-size: 13vw;
+      }
+
+      .sidebar {
+        display: none;
+      }
+
+      .flex-split {
+        flex-direction: column;
+
+      }
+
+      .about-container {
+        width: 100%;
+      }
+
+      .header {
+        font-size: 3vw;
+        margin-right: 2%;
+      }
+
+      .image {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 100px;
+
+      }
+
+      .threesplit {
+        width: 31.33%;
+      }
+
+
+    }
+
+    @media (max-width: 1153px) {
+
+      .nav,
+      .header {
+        display: none;
+      }
+
+      .hugecont {
+        flex-direction: column;
+      }
+
+      .threesplit {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .topnav {
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+      }
+
+      /* Style navigation menu links */
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        display: block;
+        position: absolute;
+        margin-right: 20PX;
+        right: 0;
+        top: 0;
+      }
+
+
+
+      /* Style the active link (or home/logo) */
+      .active {
+        font-weight: bold;
+        font-size: 2vw;
+        text-align: center;
+
+        color: white;
+      }
+
+      #welcome {
+        margin-top: 210px;
+      }
+
+      #welcome,
+      #sd {
+        font-size: 9vw;
+      }
+
+      #welcomename {
+        font-size: 25vw;
+      }
+
+      #portDir {
+        display: none;
+      }
+
+    }
+
+    @media(min-width: 1153px) and (max-width: 1265px) {
+      .topnav {
+        display: none;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      #welcome {
+        margin-top: 210px;
+      }
+
+      #welcome,
+      #sd {
+        font-size: 8vw;
+      }
+
+      #welcomename {
+        font-size: 20vw;
+      }
+
+      #navItems {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+
+    @media (min-width: 1266px) {
+
+      .flex-split {
+        flex-direction: row;
+
+      }
+
+      .about-container {
+        width: 60%;
+      }
+
+      .header {
+        font-size: 2.5em;
+      }
+
+      .hugecont {
+        flex-direction: row;
+      }
+
+      .threesplit {
+        width: 31.33%;
+      }
+
+      .topnav {
+        display: none;
+      }
+
+      #welcome {
+        margin-top: 100px;
+      }
+
+      #welcome,
+      #sd {
+        font-size: 6vw;
+      }
+
+      #welcomename {
+        font-size: 20vw;
+      }
+
+      .nav {
+        padding-top: 1%;
+        padding-left: 4%;
+      }
+    }
+
+    .wrapper {
+      width: 98%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .mainPage {
+      margin-top: 97px;
+    }
+
+    .footer {
+      height: 50px;
+      text-align: right;
+      margin-right: 2%;
+      background-color: transparent;
+      position: fixed;
+      left: -30px;
+      bottom: 50px;
+      width: 100%;
+      color: white;
+    }
+
+    .footer h1 {
+      background-color: transparent;
+    }
+
+    .blue {
+      height: 300px;
+    }
+
+    ul {
+
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul li {
+      font-size: 1.4em;
+      text-decoration: none;
+      width: 24%;
+      text-align: center;
+      display: inline-block
+    }
+
+    .mainContainer {
+      height: 1000px;
+    }
+
+    .sidebar {
+      order: 1;
+      height: 600px;
+      background-color: purp;
+    }
+
+    .with-sidebar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s1);
+    }
+
+    .with-sidebar> :first-child {
+      flex-basis: 10%;
+      flex-grow: 1;
+    }
+
+    .with-sidebar> :last-child {
+      flex-basis: 0;
+      flex-grow: 999;
+      min-inline-size: 50%;
+    }
+
+    .mainText {
+      width: 98%;
+      font-size: 24px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .grey {
+      background-color: grey;
+
+    }
+
+    .sub {
+      font-size: 19px;
+      text-align: center;
+    }
+
+    p {
+      font-family: "Overpass";
+      margin-top: 0;
+    }
+
+    #img {
+      filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(244deg) brightness(104%) contrast(102%);
+      width: 300px;
+      position: absolute;
+      left: 250px;
+      top: 350px;
+    }
+
+    #welcome {
+      /* transform:rotate(-10deg); */
+      font-family: HelveticaNeue;
+      text-align: center;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 98px;
+      height: 710px;
+
+    }
+
+    #sd {
+      font-family: HelveticaNeue;
+      margin-top: 0;
+
+      margin-bottom: 55vh;
+      text-align: center;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    #portfolio li {
+      font-size: 1em;
+    }
+
+    .fixedTop {
+      z-index: 1;
+      position: fixed;
+      width: 100%
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav {
+      z-index: 1;
+      position: fixed;
+      width: 90%;
+    }
+
+    #welcomename {
+      font-family: "Arch", HelveticaNeue, sans-serif;
+      text-align: center;
+      word-break: break-all;
+      color: lime;
+    }
+
+    #portNav ul li {
+      font-size: .9em;
+    }
+
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    #fade-wrapper {
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: SpaceMono, sans-serif;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: HelveticaNeue;
+      font-weight: bold;
+      border-color: grey;
+      border-style: solid;
+    }
+
+
+
+    .fadecontainer input {
+      border-style: none;
+    }
+
+    .fadecontainer input {
+      font-family: HelveticaNeue;
+      font-size: .9em;
+      outline: none;
+    }
+
+    .name {
+      border: 0;
+      appearance: none;
+    }
+
+    .aboutContactContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+
+    .about-container {
+      /* width: 60%; */
+    }
+
+    .flex-split {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .image img {
+
+      position: sticky;
+      top: 160px;
+
+
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+
+    .image {
+      width: 40%;
+      padding-left: 20px;
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    h3 {
+      font-size: 1.4em;
+    }
+
+    .title p {
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 11px;
+    }
+
+    .contact-item p {
+      margin-bottom: 10px;
+    }
+
+    .containerTitles {
+      text-align: center;
+    }
+
+    .subtitle {
+      margin-bottom: 7px;
+      font-size: 1em;
+    }
+
+    .workExperience {
+      text-align: left;
+    }
+
+    .workExperience p {
+      margin-bottom: 0px;
+    }
+
+    .experience-body p {
+      font-size: .8em;
+      margin-bottom: 20px;
+    }
+
+    .course-row {
+      font-size: .8em;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+    }
+
+    .education-title-container {
+      font-size: .9em;
+    }
+
+    .relCoursework {
+      margin-top: 10px;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .nonsidebar {
+      order: 2;
+    }
+
+    .projectText {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+
+    .projectContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .projectText .title {
+      padding-top: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 11px;
+    }
+
+    .projectText .subtext {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .projectPhoto img {
+      width: 100%;
+      padding-right: 20px;
+
+    }
+
+    .titleDateContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projTitle {
+      font-size: 1.5em;
+      margin-bottom: 11px;
+      padding-top: 20px;
+    }
+
+    .project {
+      padding-bottom: 50px;
+    }
+
+    .projectMegaContainer {
+      padding-right: 10px;
+    }
+
+    .grey {
+      color: lightgray;
+      background-color: transparent;
+    }
+
+    .TagsSubtext {
+      font-family: "Overpass";
+      font-size: .em;
+    }
+
+    .image img {
+      border: 10px solid #EDEDED;
+    }
+
+    .footerMobile {
+      display: none;
+    }
+
+    .contact-item {
+      text-align: left;
+    }
+
+    .wrapper {
+      width: 98%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      margin: 0;
+      2
+    }
+
+    .mainPage {
+      margin-top: 97px;
+    }
+
+    .footer {
+      height: 50px;
+      text-align: right;
+      margin-right: 2%;
+      background-color: transparent;
+      position: fixed;
+      left: -30px;
+      bottom: 50px;
+      width: 100%;
+      color: white;
+    }
+
+    .footer h1 {
+      background-color: transparent;
+    }
+
+    .blue {
+      height: 300px;
+    }
+
+    ul {
+
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul li {
+      font-size: 1.4em;
+      text-decoration: none;
+      width: 24%;
+      text-align: center;
+      display: inline-block
+    }
+
+    .mainContainer {
+      height: 1000px;
+    }
+
+    .sidebar {
+      order: 1;
+      height: 600px;
+      background-color: purp;
+    }
+
+    .with-sidebar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s1);
+    }
+
+    .with-sidebar> :first-child {
+      flex-basis: 10%;
+      flex-grow: 1;
+    }
+
+    .with-sidebar> :last-child {
+      flex-basis: 0;
+      flex-grow: 999;
+      min-inline-size: 50%;
+    }
+
+    .mainText {
+      font-size: 24px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .grey {
+      background-color: grey;
+
+    }
+
+    .sub {
+      font-size: 19px;
+      text-align: center;
+    }
+
+    p {
+      font-family: "Overpass";
+      margin-top: 0;
+    }
+
+    a:hover {
+      color: yellow;
+    }
+
+    #img {
+      filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(244deg) brightness(104%) contrast(102%);
+      width: 300px;
+      position: absolute;
+      left: 250px;
+      top: 350px;
+    }
+
+    #welcome {
+      /* transform:rotate(-10deg); */
+      font-family: HelveticaNeue;
+      text-align: center;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 98px;
+      height: 710px;
+    }
+
+    #sd {
+      font-family: HelveticaNeue;
+      text-align: center;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    #portfolio li {
+      font-size: 1em;
+    }
+
+    .fixedTop {
+      z-index: 1;
+      position: fixed;
+      width: 100%
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav {
+      z-index: 1;
+      position: fixed;
+      width: 90%;
+    }
+
+    #welcomename {
+      font-family: "Arch", HelveticaNeue, sans-serif;
+      text-align: center;
+      color: lime;
+    }
+
+    #portNav ul li {
+      font-size: .9em;
+    }
+
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    #fade-wrapper {
+      z-index: 2;
+      display: ;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      background: #161719;
+    }
+
+    .button {
+      padding: 10px;
+      border-radius: 6px;
+      font-family: HelveticaNeue;
+      font-weight: bold;
+      border-color: grey;
+      border-style: solid;
+    }
+
+    .fadecontainer input {
+      border-style: none;
+    }
+
+    .fadecontainer input {
+      font-family: HelveticaNeue;
+      font-size: .9em;
+      outline: none;
+    }
+
+    .name {
+      border: 0;
+      appearance: none;
+    }
+
+    .aboutContactContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .flex-split {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .image img {
+      position: sticky;
+      top: 160px;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+
+    .title p {
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 11px;
+    }
+
+    .contact-item p {
+      margin-bottom: 10px;
+    }
+
+    .containerTitles {
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 1em;
+    }
+
+    .workExperience {
+      text-align: left;
+    }
+
+    .workExperience p {
+      margin-bottom: 0px;
+    }
+
+    .course-row {
+      font-size: .8em;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+    }
+
+    .education-title-container {
+      font-size: .9em;
+    }
+
+    .relCoursework {
+      margin-top: 10px;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .nonsidebar {
+      order: 2;
+    }
+
+    .projectText {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+
+    .projectContainer {
+      display: flex;
+    }
+
+    .projectText .title {
+      padding-top: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 11px;
+    }
+
+    .projectText .subtext {
+      font-weight: bold;
+    }
+
+    .projectPhoto img {
+      width: 100%;
+
+
+    }
+
+    .titleDateContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projTitle {
+      margin-bottom: 11px;
+      padding-top: 20px;
+    }
+
+    .project {
+      padding-bottom: 50px;
+    }
+
+    .projectMegaContainer {
+      padding-right: 10px;
+    }
+
+    .grey {
+      color: lightgray;
+      background-color: transparent;
+    }
+
+    .TagsSubtext {
+      font-family: "Overpass";
+      font-size: .em;
+    }
+
+    .image img {
+      width: 100%;
+      border: 3px solid #EDEDED;
+
+    }
+
+    #thanks {
+      font-size: 15px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    canvas {
+      background-color: transparent;
+      position: fixed;
+      top: 100px;
+      max-width: max-content;
+      max-height: 900px;
+      /* width: 97%; */
+      /* height: 300px; */
+
+    }
+
+    #confettiVibes {
+      z-index: 1;
+    }
+
+    #cloud img {
+      display: none;
+      position: fixed;
+      background-color: transparent;
+      width: 800px;
+      height: 300px;
+      opacity: 20%;
+      top: 250px;
+      right: 50px;
+      z-index: 1;
+    }
+
+    .hugecont img {
+      max-width: 100%;
+      height: auto;
+      margin: 0 0 5%;
+    }
+
+    .hugecont {
+
+      justify-content: space-evenly;
+      display: flex;
+    }
+
+    .threesplit {
+      display: flex;
+
+
+      flex-direction: column;
+    }
+
+    .nav {
+      background-color: transparent;
+    }
+
+    .nav li {
+      background-color: transparent;
+
+    }
+
+    ul {
+      background-color: transparent;
+    }
+
+    .nav li {
+      border-radius: 24px;
+      border: solid;
+      border-color: lime;
+      background-color: #161618;
+      padding: 5px;
+    }
+
+    ul li {
+      width: 250px;
+
+    }
+
+    .nav {
+      width: 95%;
+
+    }
+
+    #navItems {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+    }
+
+    .header,
+    .header h1,
+    .fixedTop {
+      background-color: transparent;
+    }
+
+
+    .header,
+    .nav {
+      /* background-color: red; */
+      /* backdrop-filter: blur(1px);
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+            -webkit-transform: translate3d(0,0,0);
+            -webkit-transform: translateZ(0);
+            backface-visibility: hidden;
+            perspective: 1000;
+            transform: translate3d(0,0,0);
+            transform: translateZ(0); */
+    }
+
+    li a {
+      /* padding: 2px;
+            border: solid white;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-radius: 24px;
+            margin-bottom: 20px; */
+    }
+
+    #portDir ul {
+      margin-right: auto;
+      width: 100%;
+      margin-left: auto;
+    }
+
+    #text {
+      font-size: 20px;
+      width: max-content;
+    }
+
+    .project,
+    .project,
+    .project {
+      width: 40%;
+    }
+
+    .projectPhoto {
+      width: 60%;
+      padding: 20px;
+
+    }
+
+    .projectPhoto img {
+      margin: 0;
+      padding: 0;
+      border: solid white;
+    }
+
+
+
+    /* } */
+  </style>
+</head>
+
+<body>
+  <div id="fade-wrapper">
+    <div class="fadecontainer">
+      <div id="text">
+        <h1>Hi, I'm Gerardo!<br> Let's get to know each other...<br>
+          What's your name? <input autocomplete="off" type="text" id="name" placeholder="Xander"><br>Favorite color? <input autocomplete="off" type="text" id="color" placeholder="Lime"></h1>
+
+        <button class="button" id="button" onclick="fn1(); fn2(); fn3(); " id="continueButton" type="submit">CONTINUE</button>
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+  <div class="wrapper">
+    <div id="cloud">
+      <img src="https://www.pngkit.com/png/full/443-4439833_smoke-clouds-sticker-by-josh-rigling-for-ios.png" alt="">
+    </div>
+
+
+    <div id="cursor">
+      <div class="node" id="node"></div>
+      <div class="cursor" id="cursor"></div>
+    </div>
+
+
+
+    <div class="container">
+
+
+      <div class="fixedTop">
+        <div class="header">
+          <h1>GERARDO AGUILAR-AGUILERA</h1>
+
+        </div>
+        <div class="">
+          <div class="topnav">
+            <a href="#home" class="active">GERARDO A. AGUILERA</a>
+
+            <!-- Navigation links (hidden by default) -->
+
+            <div id="myLinks">
+              <a href="#">HOME</a>
+              <a href="#best">PORTFOLIO</a>
+              <a href="#aboutAnchor">ABOUT + CONTACT</a>
+              <a href="https://drive.google.com/file/d/1qG_PbpFdGAKTsEgSvKFE39JIzhtYG-At/view?usp=sharing">RESUME</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <hr>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="mainPage">
+        <div class="with-sidebar">
+          <div class="sidebar">
+            <h1 class="vertical-rl"> DESIGNER | PROGRAMMER <br>DATA NERD | MUSIC LOVER LANGUAGE NERD </h1>
+          </div>
+
+
+
+          <div class=nonsidebar>
+            <!-- non-sidebar -->
+            <nav class="nav">
+              <ul id="navItems">
+                <li><a href="#" class="nodeHover">HOME</a></li>
+                <li><a href="#best" class="nodeHover">PORTFOLIO</a></li>
+                <li><a href="#aboutAnchor" class="nodeHover anchor">ABOUT + CONTACT </a></li>
+                <li><a href="https://drive.google.com/file/d/1qG_PbpFdGAKTsEgSvKFE39JIzhtYG-At/view?usp=sharing" target="_blank" class="nodeHover">RESUME</a></li>
+              </ul>
+            </nav>
+
+
+            <div class="mainText">
+              <h1 id="welcome">WELCOME</h1>
+              <h1 id="welcomename"></h1>
+              <h2 id="sd"></h2>
+
+
+              <div id="about">
+                <h2 id="about" class="">Who am I?</h2>
+                <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to combine my business and design backgrounds to develop
+                  effectively communicated solutions to modern problems. I'd like to welcome you to my website where all of my projects live :)</p>
+                <p id="best">Best,</p>
+                <p>Gerardo</p>
+                <p class="sub" style="color:lightgray">[Learn More]</p>
+                <br>
+                <hr>
+
+              </div>
+
+              <div id="portNav">
+                <h2 class="center">Portfolio</h2>
+                <hr>
+                <div id="portDir">
+                  <ul style="">
+                    <li><a href="#about" class="nodeHover">All</a></li>
+                    <li><a href="test" class="nodeHover">Programming</a></li>
+                    <li><a href="test" class="nodeHover">Design</a></li>
+                    <li><a href="test" class="nodeHover">Projects</a></li>
+                    <li><a href="test" class="nodeHover">Front-End</a></li>
+                    <li><a href="test" class="nodeHover">Marketing</a></li>
+                    <li><a href="test" class="nodeHover">Photoshop</a></li>
+                    <li><a href="test" class="nodeHover">Illustrator</a></li>
+                    <li><a href="test" class="nodeHover">AfterEffects</a></li>
+                    <li><a href="test" class="nodeHover">InDesign</a></li>
+                  </ul>
+                  <hr>
+                </div>
+
+
+                <!-- <div class="projectMegaContainer">
+                    <div class="project1">
+                    <div class="projectContainer">
+
+                      <div class="project">
+                        <div class="projectText">
+
+                          <div class="titleandbody">
+                            <div class="titleDateContainer">
+                              <p class="projTitle">Intro to Web Development</p>
+
+                            </div>
+
+                            <p class="projectBody">For my Web Publishing final I was asked to develop something that demonstrates the skills i’ve learned throughout the semester. Understanding the overwhelming nature of web development that keeps people from pursuing tech careers I saw no better way of showcasing what i’ve learned than by putting it all in one place for anyone to use.<br><br>IWD is a tutorial website that breaks down coding fendamentals for anyone looking to break into tech. No prior knowledge in web development is assumed and the website is built with HTML, CSS and minor javascript.</p>
+
+                          </div>
+                          <p class="subtext">Tags: Front-End, Course Project</p>
+
+                        </div>
+                      </div>
+                      <div class="projectPhoto">
+                        <img src="SCR-20220512-bar.jpeg" alt="">
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project2">
+                    <div class="projectContainer">
+
+                      <div class="project">
+                        <div class="projectText">
+
+                          <div class="titleandbody">
+                            <div class="titleDateContainer">
+                              <p class="projTitle">Gerardo's Lost Luggage Form</p>
+
+                            </div>
+
+                            <p class="projectBody">Frustrated with the uninsipired nature of the common luggage tag I tasked myself with building something more inviting and effective. <br><br>Gerardo’s Lost Luggage form is a fully responsive contact form built with Bootstrap and JavaScript. The form is accesible through a QR code that sits in my luggage tags and supports multi-language translation making it easy to return luggage for anyone with a smartphone.</p>
+
+                          </div>
+                          <p class="subtext">Tags:</p>
+
+                        </div>
+                      </div>
+                      <div class="projectPhoto">
+                        <img src="SCR-20220512-jaz.png" alt="">
+
+                      </div>
+                    </div>
+                  </div>
+                    <div class="project3">
+                    <div class="projectContainer">
+
+                      <div class="project">
+                        <div class="projectText">
+
+                          <div class="titleandbody">
+                            <div class="titleDateContainer">
+                              <p class="projTitle">Artify</p>
+
+                            </div>
+
+                            <p class="projectBody">The basis for Artify was built on the summation that music can tell you a lot of a persons current mood and mood is often associated with color which is used by artists to evoke feeling, depth and elan.<br><br>Artify utilizes Spotify and The Metropolitan Museum of Art’s(MET) respective APIs to extract a color based on the user's implicit mood(derived from recent listening history). Artify then uses the color and surjectivly pairs it with a work of art from the museum’s database of over 219,000+ cataloged artworks. </p>
+
+                          </div>
+                          <p class="subtext">Tags:</p>
+
+
+
+
+                        </div>
+
+                      </div>
+                      <div class="projectPhoto" id="imgsss">
+                        <img src="SCR-20220512-jaz.png" alt="">
+
+                      </div>
+                    </div>
+                  </div>
+
+                  </div> -->
+
+
+                <div class="hugecont">
+                  <div class="threesplit">
+                    <img src="SCR-20220511-eee.png" alt="">
+                    <img src="ken5.png" alt="">
+
+
+                  </div>
+                  <div class="threesplit">
+                    <img src="SCR-20220511-ed4.png" alt="">
+
+                    <img src="SCR-20220511-ec5.png" alt="">
+
+
+                  </div>
+
+                  <div class="threesplit">
+                    <img src="ken3.png" alt="">
+                    <img src="SCR-20220514-ddi.png" alt="">
+
+
+
+
+                  </div>
+
+
+                </div>
+
+
+
+
+
+
+
+              </div>
+
+              <div id="contact">
+                <div id="aboutAnchor"></div>
+                <hr>
+
+
+                <h2 id="about" class="center">About + Contact</h2>
+                <hr>
+                <div class="flex-split">
+                  <div class="about-container">
+                    <div class="contact-container">
+                      <div class="contact-title-container">
+                        <div class="title">
+                          <p id="contact">Contact + Professional Media</p>
+                        </div>
+                        <div class="contact-row">
+                          <div class="contact-item">
+                            <p>Gerardo Aguilar</p>
+                          </div>
+                          <div class="contact-item"><a href="https://github.com/gaguiIar" target="_blank">GitHub</a></div>
+                        </div>
+                        <div class="contact-row">
+                          <div class="contact-item">
+                            <p>209-761-4692</p>
+                          </div>
+                          <div class="contact-item"><a href="https://www.linkedin.com/in/gerardo-aguilar-aguilera/" target="_blank">LinkedIn</a></div>
+                        </div>
+                        <div class="contact-row">
+                          <div class="contact-item">
+                            <p>gaguilarcs1@gmail.com</p>
+                          </div>
+                          <div class="contact-item"><a href="https://blog.gerardoaguilar.com" target="_blank">Blog</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="containerTitles">
+                      <h3>Experience</h3>
+                      <hr>
+                      <div class="workExperience">
+                        <div class="title">
+                          <div class="company">
+                            <p>NASA - Online</p>
+                          </div>
+                          <div class="timeEmployed">
+                            <p>November 2021 - Present</p>
+                          </div>
+                        </div>
+                        <div class="subtitle">
+                          <p>Aerospace Scholar</p>
+                        </div>
+                        <div class="contact-row">
+                          <div class="experience-body">
+                            <p>Completed a five-week online course on the history of NASA, its current initiatives, and aerospace technology which was then proceeded with a week-long team-building exercise.</p>
+                          </div>
+                        </div>
+
+                        <div class="title">
+                          <div class="company">
+                            <br>
+                            <p>Senator Anna Caballero</p>
+                          </div>
+                          <div class="timeEmployed">
+                            <br>
+                            <p>June 2019- July 2020</p>
+                          </div>
+
+                        </div>
+                        <div class="subtitle">
+                          <p>Intern</p>
+                        </div>
+                        <div class="contact-row">
+                          <div class="experience-body">
+                            <p>Sourced information regarding Census Designated Places and their supporting irrigation districts to curate a visual representation used for pre-legislative work. Utilized Adobe Photoshop, Premiere Pro and Audacity to
+                              produce cross-platform social media posts such as podcasts, thumbnails, Instagram graphics and video media. Created and grew the official Youtube channel to distribute content throughout the constituency more
+                              effectively.</p>
+                          </div>
+
+                        </div>
+                        <hr>
+
+                        <!-- <div class="title">
+                                <p>Company Name</p>
+                              </div>
+                              <div class="subtitle">
+                                <p>Position</p>
+                              </div>
+                                <div class="contact-row">
+                                  <div class="experience-body"><p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p></div>
+                                </div>
+
+                          <hr> -->
+
+                      </div>
+                    </div>
+                    <div class="containerTitles">
+                      <h3>Education</h3>
+                      <hr>
+                      <div class="education-title-container">
+                        <div class="title">
+                          <p><strong>University of Southern California</strong></p>
+                        </div>
+                      </div>
+                      <div class="contact-row">
+                        <div class="contact-item">
+                          <p>B.S. Computer Science & Business Administration</p>
+                        </div>
+                        <div>
+                          <p style="margin-bottom: 10px">2024</p>
+                        </div>
+                      </div>
+                      <div class="contact-row">
+                        <div class="contact-item">
+                          <p>Minor Communication Design</p>
+                        </div>
+                        <div>
+                          <p style="margin-bottom: 10px">2024</p>
+                        </div>
+                      </div>
+
+                      <div class="relCoursework">
+                        <div class="title">
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p style="font-size: 1.1em"><strong>Relevent Coursework</strong></p>
+                            </div>
+                            <div>
+                              <p style="font-size: 1.1em"><strong>Semester</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p> Discrete Mathematics</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">Spring 2022</p>
+                          </div>
+                        </div>
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p>Digital Tools for Design</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">Spring 2022</p>
+                          </div>
+                        </div>
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p> Web Publishing</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">Fall 2021</p>
+                          </div>
+                        </div>
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p>Linear Algebra</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">Summer 2021</p>
+                          </div>
+                        </div>
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p>Programming Concepts</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">Spring 2021</p>
+                          </div>
+                        </div>
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p>Calculus II</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">Spring 2021</p>
+                          </div>
+                        </div>
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p>Computer Information Systems</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px text-align: right">Summer 2020</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="relCoursework">
+                        <div class="title">
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p style="font-size: 1.1em"><strong>Student Involvment</strong></p>
+                            </div>
+                            <div>
+                              <p style="font-size: 1.1em"><strong>Time Period</strong></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p>Corpus Collosum</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">2021-2022</p>
+                          </div>
+                        </div>
+                        <div class="course-row">
+                          <div class="contact-item">
+                            <p>Glimpse of the Globe</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">2021</p>
+                          </div>
+                        </div>
+                        <div id="thanks">
+                          <h1>Thanks for visiting!</h1>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="image">
+                    <!-- <img src="SCR-20220303-ioc.png" alt=""> -->
+                    <img src="meMilano.jpeg" alt="">
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="footerMobile">
+    <h1>Last Updated: 05/14/2022(WIP)</h1>
+
+  </div>
+  <div class="footer">
+    <h1>Los Angeles, CA</h1>
+    <h1>Last Updated: 05/14/2022</h1>
+
+  </div>
+
+
+  <!-- include jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+  <!-- include plugin src -->
+  <script src="nodecursor-jquery.js"></script>
+
+  <!-- active plugin -->
+  <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    $(function() {
+      // init plugin
+      NodeCursor({
+        cursor: true, // enable cursor
+        node: true, // enable node
+        cursor_velocity: 1, // cursor velocity : 1 = default w1 = slower, >1 = faster
+        node_velocity: 0.35, // cursor velocity : 1 = default w1 = slower, >1 = faster
+        native_cursor: 'none', // default,  grab, pointer ( all cursor's css properties)
+        element_to_hover: '.nodeHover', // // element that will trigger cursor anime on hover :  'disable', or any element : 'a', '.class', '#id'
+        cursor_class_hover: 'disable', // 'disable', or any class name (without dot) - ex : expand, reduce relative to your css
+        node_class_hover: 'expand', // 'disable', or any class name  (without dot) - ex : expand, reduce relative to your css
+        hide_mode: true, // hide node and cursor if inactive
+        hide_timing: 2000, // hide timing if inactive
+      });
+
+    });
+
+    function fn1() {
+      var str = document.getElementById("color").value;
+      var strn = str.split(' ').join('');
+      $('#welcomename').css('color', strn);
+      $('.nav li').css('border-color', strn);
+      $('.active').css('color', strn);
+
+      // $("a:hover").css('color', strn);
+
+
+    }
+
+    function fn2() {
+      var name = document.getElementById("name").value;
+      if (name === "") {
+        $('#welcomename').html("visitor");
+      } else {
+        $('#welcomename').html(name);
+      }
+
+    }
+    var i = 0;
+    var txt = '     SROLL DOWN';
+    var speed = 120;
+
+    function fn3() {
+      if (i < txt.length) {
+        document.getElementById("sd").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(fn3, speed);
+      }
+    }
+    // import JSConfetti from 'js-confetti'
+    //
+    // const jsConfetti = new JSConfetti()
+    //
+    // jsConfetti.addConfetti()
+
+
+
+
+
+    var input = document.getElementById("color");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("continueButton").click();
+      }
+    });
+    $(document).ready(function() {
+      $('.button').click(function() {
+        $('#fade-wrapper').fadeOut();
+      });
+
+    });
+  </script>
+</body>
+
+</html>
