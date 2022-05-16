@@ -1,13 +1,8 @@
 @font-face {
       font-family: Arch;
+      src: url("GIsAnArchitect-Regular.ttf") format("truetype");
       src: url("GIsAnArchitect-Regular.otf") format("opentype");
-      speak: none;
-      font-style: normal;
       font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
     }
 
 @font-face {
