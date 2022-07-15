@@ -435,7 +435,9 @@
       /* transform:rotate(-10deg); */
       font-family: HelveticaNeue;
       text-align: center;
+
     }
+
 
     .sidebar {
       position: sticky;
@@ -483,7 +485,10 @@
       text-align: center;
       word-break: break-all;
       color: lime;
+
     }
+
+
 
     #portNav ul li {
       font-size: .9em;
@@ -1130,11 +1135,11 @@
       border-radius: 24px;
       border: solid;
       border-color: lime;
-      background-color: #161618;
+      background-color: #161719;
       padding: 5px;
     }
 
-    ul li {
+    .nav ul li {
       width: 250px;
 
     }
@@ -1229,6 +1234,19 @@
       height: auto;
     }
 
+    .itemHov {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      text-align: center;
+      color: #FFF;
+      background-color: lime;
+      border-radius: 10px;
+    }
+
+
 
 
     /* } */
@@ -1322,17 +1340,22 @@
               <h2 id="sd"></h2>
 
 
-              <div id="about">
-                <h2 id="about" class="">Who am I?</h2>
-                <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to combine my business and design backgrounds to develop
-                  effectively communicated solutions to modern problems. I'd like to welcome you to my website where all of my projects live :)</p>
-                <p id="best">Best,</p>
-                <p>Gerardo</p>
-                <p class="sub" style="color:lightgray">[Learn More]</p>
-                <br>
-                <hr>
 
-              </div>
+                <div id="about">
+                  <h2 id="about" class="">Who am I?</h2>
+                  <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to combine my business and design backgrounds to develop
+                    effectively communicated solutions to modern problems. I'd like to welcome you to my website where all of my projects live :)</p>
+                  <p id="best">Best,</p>
+                  <p>Gerardo</p>
+
+
+                </div>
+
+
+              <p class="sub" style="color:lightgray">[Learn More]</p>
+              <br>
+              <hr>
+
 
               <div id="portNav">
                 <h2 class="center">Portfolio</h2>
@@ -1342,104 +1365,24 @@
                     <li><a href="#about" class="nodeHover">All</a></li>
                     <li><a href="test" class="nodeHover">Programming</a></li>
                     <li><a href="test" class="nodeHover">Design</a></li>
-                    <li><a href="test" class="nodeHover">Projects</a></li>
+                    <li><a href="test" class="nodeHover">Full-Stack</a></li>
                     <li><a href="test" class="nodeHover">Front-End</a></li>
                     <li><a href="test" class="nodeHover">Marketing</a></li>
-                    <li><a href="test" class="nodeHover">Photoshop</a></li>
-                    <li><a href="test" class="nodeHover">Illustrator</a></li>
-                    <li><a href="test" class="nodeHover">AfterEffects</a></li>
-                    <li><a href="test" class="nodeHover">InDesign</a></li>
+                    <li><a href="test" class="nodeHover">Social Design</a></li>
+                    <li><a href="test" class="nodeHover">Adobe Suite</a></li>
+
                   </ul>
                   <hr>
                 </div>
 
-
-                <!-- <div class="projectMegaContainer">
-                    <div class="project1">
-                    <div class="projectContainer">
-
-                      <div class="project">
-                        <div class="projectText">
-
-                          <div class="titleandbody">
-                            <div class="titleDateContainer">
-                              <p class="projTitle">Intro to Web Development</p>
-
-                            </div>
-
-                            <p class="projectBody">For my Web Publishing final I was asked to develop something that demonstrates the skills i’ve learned throughout the semester. Understanding the overwhelming nature of web development that keeps people from pursuing tech careers I saw no better way of showcasing what i’ve learned than by putting it all in one place for anyone to use.<br><br>IWD is a tutorial website that breaks down coding fendamentals for anyone looking to break into tech. No prior knowledge in web development is assumed and the website is built with HTML, CSS and minor javascript.</p>
-
-                          </div>
-                          <p class="subtext">Tags: Front-End, Course Project</p>
-
-                        </div>
-                      </div>
-                      <div class="projectPhoto">
-                        <img src="SCR-20220512-bar.jpeg" alt="">
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="project2">
-                    <div class="projectContainer">
-
-                      <div class="project">
-                        <div class="projectText">
-
-                          <div class="titleandbody">
-                            <div class="titleDateContainer">
-                              <p class="projTitle">Gerardo's Lost Luggage Form</p>
-
-                            </div>
-
-                            <p class="projectBody">Frustrated with the uninsipired nature of the common luggage tag I tasked myself with building something more inviting and effective. <br><br>Gerardo’s Lost Luggage form is a fully responsive contact form built with Bootstrap and JavaScript. The form is accesible through a QR code that sits in my luggage tags and supports multi-language translation making it easy to return luggage for anyone with a smartphone.</p>
-
-                          </div>
-                          <p class="subtext">Tags:</p>
-
-                        </div>
-                      </div>
-                      <div class="projectPhoto">
-                        <img src="SCR-20220512-jaz.png" alt="">
-
-                      </div>
-                    </div>
-                  </div>
-                    <div class="project3">
-                    <div class="projectContainer">
-
-                      <div class="project">
-                        <div class="projectText">
-
-                          <div class="titleandbody">
-                            <div class="titleDateContainer">
-                              <p class="projTitle">Artify</p>
-
-                            </div>
-
-                            <p class="projectBody">The basis for Artify was built on the summation that music can tell you a lot of a persons current mood and mood is often associated with color which is used by artists to evoke feeling, depth and elan.<br><br>Artify utilizes Spotify and The Metropolitan Museum of Art’s(MET) respective APIs to extract a color based on the user's implicit mood(derived from recent listening history). Artify then uses the color and surjectivly pairs it with a work of art from the museum’s database of over 219,000+ cataloged artworks. </p>
-
-                          </div>
-                          <p class="subtext">Tags:</p>
-
-
-
-
-                        </div>
-
-                      </div>
-                      <div class="projectPhoto" id="imgsss">
-                        <img src="SCR-20220512-jaz.png" alt="">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  </div> -->
                 <div class="flexDos">
                   <div class="flexDosItems">
-                    <img src="SCR-20220512-jce.png" alt="">
+
+                    <img src="iwd.jpg" alt="">
+
+
                   </div>
+
                   <div class="flexDosItems">
                     <img src="SCR-20220512-jce.png" alt="">
                   </div>
