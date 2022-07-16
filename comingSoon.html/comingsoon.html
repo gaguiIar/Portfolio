@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>test</title>
+  <script src="script.js">
+
+  </script>
+  <style media="screen">
+    @font-face {
+      font-family: "Helvetic Neue";
+      src: url("HelveticaNeue-Bold.otf") format("otf");
+    }
+
+    span {
+      color: white;
+    }
+
+    body {
+      background-color: #161719;
+      margin: 0;
+    }
+
+    .photo {
+      padding-right: 15px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+
+    .photo img {
+      width: 15vw;
+      border-radius: 50%;
+      border: 3px solid #D2CD99;
+
+    }
+
+    p,
+    span {
+      font-family: "Helvetica Neue";
+      font-weight: bold;
+      font-size: 1.7vw;
+      color: white;
+
+    }
+
+    .music {
+      font-family: "Helvetica Neue";
+      font-weight: bold;
+      background-color: #314B77;
+      border-radius: 20px;
+      width: 47vw;
+      border: 5px solid #D2CD99;
+
+      display: flex;
+      align-items: center;
+    }
+
+    .song {
+      margin-left: 45px;
+      margin-right: 15px;
+      font-size: 1.7vw;
+    }
+
+    #cur {
+      color: lightgrey;
+    }
+
+
+    body {
+      background-image: url("https://wallpaperaccess.com/full/647786.gif");
+      background-size: cover;
+    }
+
+    .flexSplit {
+      width: 38vw;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px;
+      margin-left: -100px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .music {}
+
+    .info {
+      margin: auto;
+    }
+
+    .info h1,
+    h2 {
+      font-family: HelveticaNeue;
+      color: white;
+      margin: 0;
+
+    }
+
+    h1 {
+      font-size: 5vw;
+    }
+
+    h2 {
+      font-size: 2.2vw;
+    }
+
+    h2 span {
+      font-size: inherit;
+      color: lightgrey;
+    }
+
+    strong {
+      color: #D2CC9B;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="parentDiv">
+    <div class="flexSplit">
+      <div class="music">
+        <div class="song">
+          <span id="cur">I'm currently listening to...<br></span>
+          <span id="song">Shine On You Crazy Diamond (Pts. 6-9)</span>
+          <span>by</span>
+          <span id="artist">Pink FLoyd</span>
+
+
+        </div>
+        <div class="photo">
+          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/394cfbc6b2a74766a4364778c641ca51.png" alt="">
+        </div>
+      </div>
+
+      <div class="info">
+        <h1>COMING SOON</h1>
+        <h2>Currently working on: <strong>Artify</strong>.</h2>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

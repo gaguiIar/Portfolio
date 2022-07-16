@@ -828,6 +828,8 @@
       margin-top: 0;
     }
 
+    nav,
+    .PortNav,
     a:hover {
       color: cyan;
 
@@ -1240,6 +1242,15 @@
       display: inline;
     }
 
+    .header a {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: url('ukraine.png');
+      background-size: contain;
+      color: transparent;
+    }
+
+
     div.fixedTop:hover h1#nameNorm {
       display: none;
 
@@ -1338,8 +1349,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url("iwdblured.png");
       background-size: contain;
+      background: rgba(22, 23, 25, 0.8);
       background-repeat: no-repeat;
       opacity: 0;
       transition: opacity 0.25s;
@@ -1349,6 +1360,8 @@
       justify-content: center;
       font-size: 1.5vw;
     }
+
+
 
     .flexItemOverlay>* {
       transform: translateY(20px);
@@ -1410,7 +1423,9 @@
       <div class="fixedTop">
         <div class="header">
           <h1 id="nameNorm">GERARDO AGUILAR-AGUILERA</h1>
-          <h1 id="nameRev">ХЕРАРДО АГИЛАР-АГИЛЕРА</h1>
+          <h1 id="nameRev" class="nodeHover"><a href="https://ukraine.ua/" target="_blank">ХЕРАРДО АГИЛАР-АГИЛЕРА</a></h1>
+
+
 
         </div>
         <div class="">
@@ -1474,8 +1489,8 @@
               <div class="reveal">
                 <div id="about">
                   <h2 id="about" class="">I'm Gerardo 👋🏼</h2>
-                  <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to listen to music and make art! I feel most fufiled when I can
-                    combine my eye for design with my business and computer backgrounds to develop effective solutions to modern problems. I'd like to welcome you to my website where all of my projects live :)</p>
+                  <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to listen to music and make art! I'd like to welcome you to my
+                    website where all of my projects live :)</p>
                   <p id="best">Best,</p>
                   <img src="sign.svg" style="filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(159deg) brightness(108%) contrast(102%); width:450px; transform: rotate(-2deg); margin-left:10px;" alt="Gerardo signiture">
                   <br>
@@ -1532,8 +1547,22 @@
 
                     </div>
                     <div class="flexDosItems artify displayed">
-                      <img src="SCR-20220512-jce.png" alt="">
+                      <div class="mainIMG">
+                        <img class="ArtifyThumb" src="artify.png" alt="">
+                        <div class="flexItemOverlay">
+                          <p class="twentyMarg">Channeling my passion for art and music I built Artify! Artify utalizes Spotify and Google A&C’s respective API’s and condenses your recent listening history into a color pallete and a corresponding
+                            piece of artwork.
+                            <br><br> Give it a try!
+                          </p>
+                        </div>
+
+                      </div>
+
+
                     </div>
+                    <!-- <div class="flexDosItems artify displayed">
+                      <img src="artify.png" alt="">
+                    </div> -->
                   </div>
 
 
@@ -1601,7 +1630,7 @@
                             <div class="contact-item">
                               <p>gaguilarcs1@gmail.com</p>
                             </div>
-                            <div class="contact-item nodeHover"><a href="https://blog.gerardoaguilar.com" target="_blank">Blog </a><span> ● </span><a href="https://geesplace.gerardoaguilar.com" target="_blank">Tumblr </a></div>
+                            <div class="contact-item nodeHover"><a href="comingSoon.html/comingsoon.html" target="_blank">Blog </a><span> ● </span><a href="https://geesplace.gerardoaguilar.com" target="_blank">Tumblr </a></div>
 
                           </div>
                         </div>
