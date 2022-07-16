@@ -3,7 +3,13 @@
       src: url("GIsAnArchitect-Regular.ttf") format("truetype");
       src: url("GIsAnArchitect-Regular.otf") format("opentype");
       font-weight: normal;
-    }
+}
+@font-face {
+      font-family: gfont;
+      src: url("Gfont-Regular.ttf") format("truetype");
+      src: url("Gfont-Regular.otf") format("opentype");
+      font-weight: normal;
+}
 
 @font-face {
   font-family: "Nunito-LightItalic";
@@ -20,9 +26,11 @@
 
 * {
   color: #FAF9F6;
-  background-color: #161719;
 
   font-family: "Helvetica Neue";
+}
+body {
+  background-color: #161719;
 }
 html {
   scroll-behavior: smooth;

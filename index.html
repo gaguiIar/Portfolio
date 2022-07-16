@@ -65,6 +65,7 @@
         font-size: 3.3vw;
       }
 
+
       .footer {
         display: none;
       }
@@ -226,10 +227,18 @@
         margin-bottom: 3%;
       }
 
+      #zan img {
+        display: none;
+      }
+
     }
 
     @media(min-width: 1153px) and (max-width: 1265px) {
       .topnav {
+        display: none;
+      }
+
+      #zan img {
         display: none;
       }
 
@@ -318,6 +327,7 @@
         padding-top: 1%;
         padding-left: 4%;
       }
+
     }
 
     .wrapper {
@@ -450,7 +460,7 @@
       font-family: HelveticaNeue;
       margin-top: 0;
 
-      margin-bottom: 55vh;
+      margin-bottom: 45vh;
       text-align: center;
     }
 
@@ -484,7 +494,7 @@
       font-weight: normal;
       text-align: center;
       word-break: break-all;
-      color: lime;
+      color: Cyan;
 
     }
 
@@ -819,7 +829,8 @@
     }
 
     a:hover {
-      color: yellow;
+      color: cyan;
+
     }
 
     #img {
@@ -876,7 +887,7 @@
       font-family: "Arch", HelveticaNeue, sans-serif;
       font-weight: normal;
       text-align: center;
-      color: lime;
+      color: Cyan;
     }
 
     #portNav ul li {
@@ -1132,9 +1143,9 @@
     }
 
     .nav li {
-      border-radius: 24px;
+      border-radius: 12px;
       border: solid;
-      border-color: lime;
+      border-color: cyan;
       background-color: #161719;
       padding: 5px;
     }
@@ -1225,6 +1236,22 @@
 
     }
 
+    div.fixedTop h1#nameNorm {
+      display: inline;
+    }
+
+    div.fixedTop:hover h1#nameNorm {
+      display: none;
+
+    }
+
+    div.fixedTop h1#nameRev {
+      display: none;
+    }
+
+    div.fixedTop:hover h1#nameRev {
+      display: inline;
+    }
 
 
 
@@ -1242,14 +1269,82 @@
       right: 0px;
       text-align: center;
       color: #FFF;
-      background-color: lime;
+      background-color: Cyan;
       border-radius: 10px;
     }
 
+    #zan img {
+      height: auto;
+      width: 26vw;
+      position: absolute;
+      background-color: transparent;
+      transform: scaleX(-1);
+    }
 
+    #welcomename {
+      position: relative;
+      z-index: 1;
+    }
 
+    #fade-wrapper input,
+    button {
+      background-color: #161719;
+    }
 
-    /* } */
+    .footsie {
+      width: 300px;
+      padding: 10px;
+      padding-top: 0;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 14px;
+      color: grey;
+    }
+
+    .reveal {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: all .5s linear;
+    }
+
+    .reveal.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .all {
+      display: block;
+    }
+
+    .programming {
+      display: block;
+    }
+
+    .design {
+      display: block;
+    }
+
+    .backend {
+      display: block;
+    }
+
+    .frontend {
+      display: block;
+    }
+
+    .marketing {
+      display: block;
+    }
+
+    .socialdesign {
+      display: block;
+    }
+
+    .adobesuite {
+      display: block;
+    }
   </style>
 </head>
 
@@ -1257,8 +1352,8 @@
   <div id="fade-wrapper">
     <div class="fadecontainer">
       <div id="text">
-        <h1>Hi, I'm Gerardo!<br> Let's get to know each other...<br>
-          What's your name? <input autocomplete="off" type="text" id="name" placeholder="Xander"><br>Favorite color? <input autocomplete="off" type="text" id="color" placeholder="Lime, #EE82EE"></h1>
+        <h1>Let's get to know each other...<br>
+          What's your name? <input autocomplete="off" type="text" id="name" placeholder="Xander"><br>Favorite color? <input autocomplete="off" type="text" id="color" placeholder="Cyan, #EE82EE"></h1>
 
         <button class="button" id="button" onclick="fn1(); fn2(); fn3(); " id="continueButton" type="submit">CONTINUE</button>
 
@@ -1286,9 +1381,11 @@
     <div class="container">
 
 
+
       <div class="fixedTop">
         <div class="header">
-          <h1>GERARDO AGUILAR-AGUILERA</h1>
+          <h1 id="nameNorm">GERARDO AGUILAR-AGUILERA</h1>
+          <h1 id="nameRev">ХЕРАРДО АГИЛАР-АГИЛЕРА</h1>
 
         </div>
         <div class="">
@@ -1317,7 +1414,7 @@
       <div class="mainPage">
         <div class="with-sidebar">
           <div class="sidebar">
-            <h1 class="vertical-rl"> DESIGNER | PROGRAMMER <br>DATA NERD | MUSIC LOVER LANGUAGE NERD </h1>
+            <h1 class="vertical-rl"> DESIGNER | PROGRAMMER <br>DATA NERD | MUSIC LOVER <BR> 20 Y/O CREATIVE </h1>
           </div>
 
 
@@ -1335,328 +1432,351 @@
 
 
             <div class="mainText">
-              <h1 id="welcome">WELCOME</h1>
-              <h1 id="welcomename"></h1>
-              <h2 id="sd"></h2>
+              <div id="zan">
+                <img src="xan.png" alt="">
+              </div>
+              <div id="landing">
+                <h1 id="welcome">WELCOME</h1>
+                <h1 id="welcomename"></h1>
+                <h2 id="sd"></h2>
 
 
 
+              </div>
+
+
+
+              <div class="reveal">
                 <div id="about">
-                  <h2 id="about" class="">Who am I?</h2>
-                  <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to combine my business and design backgrounds to develop
-                    effectively communicated solutions to modern problems. I'd like to welcome you to my website where all of my projects live :)</p>
+                  <h2 id="about" class="">I'm Gerardo 👋🏼</h2>
+                  <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to listen to music and make art! I feel most fufiled when I can
+                    combine my eye for design with my business and computer backgrounds to develop effective solutions to modern problems. I'd like to welcome you to my website where all of my projects live :)</p>
                   <p id="best">Best,</p>
-                  <p>Gerardo</p>
+                  <img src="sign.svg" style="filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(159deg) brightness(108%) contrast(102%); width:450px; transform: rotate(-2deg); margin-left:10px;" alt="Gerardo signiture">
+                  <br>
+                  <br>
+                  <p class="sub fade-in" style="color:lightgray">[Learn More]<br></p>
+
 
 
                 </div>
 
-
-              <p class="sub" style="color:lightgray">[Learn More]</p>
-              <br>
-              <hr>
-
-
-              <div id="portNav">
-                <h2 class="center">Portfolio</h2>
                 <hr>
-                <div id="portDir">
-                  <ul style="">
-                    <li><a href="#about" class="nodeHover">All</a></li>
-                    <li><a href="test" class="nodeHover">Programming</a></li>
-                    <li><a href="test" class="nodeHover">Design</a></li>
-                    <li><a href="test" class="nodeHover">Full-Stack</a></li>
-                    <li><a href="test" class="nodeHover">Front-End</a></li>
-                    <li><a href="test" class="nodeHover">Marketing</a></li>
-                    <li><a href="test" class="nodeHover">Social Design</a></li>
-                    <li><a href="test" class="nodeHover">Adobe Suite</a></li>
 
-                  </ul>
+                <div id="portNav">
+                  <h2 class="center">Portfolio</h2>
                   <hr>
-                </div>
+                  <div id="portDir">
+                    <ul style="">
+                      <li><a href="#" class="nodeHover">All</a></li>
+                      <li><a href="#" class="nodeHover programming">Programming</a></li>
+                      <li><a href="#" class="nodeHover design">Design</a></li>
+                      <li><a href="#" class="nodeHover frontend">Front-End</a></li>
+                      <li><a href="#" class="nodeHover backend">Back-End</a></li>
+                      <li><a href="#" class="nodeHover markreting">Marketing</a></li>
+                      <li><a href="#" class="nodeHover socialdesign">Social Design</a></li>
+                      <li><a href="#" class="nodeHover adobesuite">Adobe Suite</a></li>
 
-                <div class="flexDos">
-                  <div class="flexDosItems">
-
-                    <img src="iwd.jpg" alt="">
-
-
-                  </div>
-
-                  <div class="flexDosItems">
-                    <img src="SCR-20220512-jce.png" alt="">
-                  </div>
-                </div>
-
-
-                <div class="hugecont">
-
-                  <div class="threesplit">
-                    <img src="SCR-20220511-eee.png" alt="">
-                    <img src="ken5.png" alt="">
-
-
-                  </div>
-                  <div class="threesplit">
-                    <img src="SCR-20220511-ed4.png" alt="">
-
-                    <img src="SCR-20220511-ec5.png" alt="">
-
-
-                  </div>
-
-                  <div class="threesplit">
-                    <img src="ken3.png" alt="">
-                    <img src="SCR-20220514-ddi.png" alt="">
-
-
-
-
-                  </div>
-
-
-                </div>
-
-
-
-
-
-
-
-              </div>
-
-              <div id="contact">
-                <div id="aboutAnchor"></div>
-                <hr>
-
-
-                <h2 id="about" class="center">About + Contact</h2>
-                <hr>
-                <div class="flex-split">
-                  <div class="about-container">
-                    <div class="contact-container">
-                      <div class="contact-title-container">
-                        <div class="title">
-                          <p id="contact">Contact + Professional Media</p>
-                        </div>
-                        <div class="contact-row">
-                          <div class="contact-item">
-                            <p>Gerardo Aguilar</p>
-                          </div>
-                          <div class="contact-item"><a href="https://github.com/gaguiIar" target="_blank">GitHub</a></div>
-                        </div>
-                        <div class="contact-row">
-                          <div class="contact-item">
-                            <p>209-761-4692</p>
-                          </div>
-                          <div class="contact-item"><a href="https://www.linkedin.com/in/gerardo-aguilar-aguilera/" target="_blank">LinkedIn</a></div>
-                        </div>
-                        <div class="contact-row">
-                          <div class="contact-item">
-                            <p>gaguilarcs1@gmail.com</p>
-                          </div>
-                          <div class="contact-item"><a href="https://blog.gerardoaguilar.com" target="_blank">Blog</a></div>
-                        </div>
-                      </div>
-                    </div>
+                    </ul>
                     <hr>
-                    <div class="containerTitles">
-                      <h3>Experience</h3>
-                      <hr>
-                      <div class="workExperience">
-                        <div class="title">
-                          <div class="company">
-                            <p>NASA - Online</p>
-                          </div>
-                          <div class="timeEmployed">
-                            <p>November 2021 - Present</p>
-                          </div>
-                        </div>
-                        <div class="subtitle">
-                          <p>Aerospace Scholar</p>
-                        </div>
-                        <div class="contact-row">
-                          <div class="experience-body">
-                            <p>Completed a five-week online course on the history of NASA, its current initiatives, and aerospace technology which was then proceeded with a week-long team-building exercise.</p>
-                          </div>
-                        </div>
+                  </div>
 
-                        <div class="title">
-                          <div class="company">
-                            <br>
-                            <p>Senator Anna Caballero</p>
-                          </div>
-                          <div class="timeEmployed">
-                            <br>
-                            <p>June 2019- July 2020</p>
-                          </div>
 
-                        </div>
-                        <div class="subtitle">
-                          <p>Intern</p>
-                        </div>
-                        <div class="contact-row">
-                          <div class="experience-body">
-                            <p>Sourced information regarding Census Designated Places and their supporting irrigation districts to curate a visual representation used for pre-legislative work. Utilized Adobe Photoshop, Premiere Pro and Audacity to
-                              produce cross-platform social media posts such as podcasts, thumbnails, Instagram graphics and video media. Created and grew the official Youtube channel to distribute content throughout the constituency more
-                              effectively.</p>
-                          </div>
 
-                        </div>
-                        <hr>
 
-                        <!-- <div class="title">
-                                <p>Company Name</p>
-                              </div>
-                              <div class="subtitle">
-                                <p>Position</p>
-                              </div>
-                                <div class="contact-row">
-                                  <div class="experience-body"><p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p></div>
-                                </div>
 
-                          <hr> -->
 
-                      </div>
+
+
+
+
+                  <!-- gorilla -->
+
+                  <div class="flexDos">
+                    <div class="flexDosItems programming frontend">
+                      <img class="" src="iwd.jpg" alt="">
                     </div>
-                    <div class="containerTitles">
-                      <h3>Education</h3>
-                      <hr>
-                      <div class="education-title-container">
-                        <div class="title">
-                          <p><strong>University of Southern California</strong></p>
-                        </div>
-                      </div>
-                      <div class="contact-row">
-                        <div class="contact-item">
-                          <p>B.S. Computer Science & Business Administration</p>
-                        </div>
-                        <div>
-                          <p style="margin-bottom: 10px">2024</p>
-                        </div>
-                      </div>
-                      <div class="contact-row">
-                        <div class="contact-item">
-                          <p>Minor Communication Design</p>
-                        </div>
-                        <div>
-                          <p style="margin-bottom: 10px">2024</p>
-                        </div>
-                      </div>
-
-                      <div class="relCoursework">
-                        <div class="title">
-                          <div class="course-row">
-                            <div class="contact-item">
-                              <p style="font-size: 1.1em"><strong>Relevent Coursework</strong></p>
-                            </div>
-                            <div>
-                              <p style="font-size: 1.1em"><strong>Semester</strong></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p> Discrete Mathematics</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px">Spring 2022</p>
-                          </div>
-                        </div>
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p>Digital Tools for Design</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px">Spring 2022</p>
-                          </div>
-                        </div>
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p> Web Publishing</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px">Fall 2021</p>
-                          </div>
-                        </div>
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p>Linear Algebra</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px">Summer 2021</p>
-                          </div>
-                        </div>
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p>Programming Concepts</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px">Spring 2021</p>
-                          </div>
-                        </div>
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p>Calculus II</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px">Spring 2021</p>
-                          </div>
-                        </div>
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p>Computer Information Systems</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px text-align: right">Summer 2020</p>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="relCoursework">
-                        <div class="title">
-                          <div class="course-row">
-                            <div class="contact-item">
-                              <p style="font-size: 1.1em"><strong>Student Involvment</strong></p>
-                            </div>
-                            <div>
-                              <p style="font-size: 1.1em"><strong>Time Period</strong></p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p>Corpus Collosum</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px">2021-2022</p>
-                          </div>
-                        </div>
-                        <div class="course-row">
-                          <div class="contact-item">
-                            <p>Glimpse of the Globe</p>
-                          </div>
-                          <div>
-                            <p style="margin-bottom: 10px">2021</p>
-                          </div>
-                        </div>
-                        <div id="thanks">
-                          <h1>Thanks for visiting!</h1>
-                        </div>
-                      </div>
+                    <div class="flexDosItems design frontend backend">
+                      <img class="" src="SCR-20220512-jce.png" alt="">
                     </div>
+                  </div>
+
+
+                  <div class="hugecont">
+
+                    <div class="threesplit">
+                      <img src="SCR-20220511-eee.png" alt="">
+                      <img src="ken5.png" alt="">
+
+
+                    </div>
+                    <div class="threesplit">
+                      <img src="SCR-20220511-ed4.png" alt="">
+
+                      <img src="SCR-20220511-ec5.png" alt="">
+
+
+                    </div>
+
+                    <div class="threesplit">
+                      <img src="ken3.png" alt="">
+                      <img src="SCR-20220514-ddi.png" alt="">
+
+
+
+
+                    </div>
+
 
                   </div>
 
-                  <div class="image">
-                    <!-- <img src="SCR-20220303-ioc.png" alt=""> -->
-                    <img src="meMilano.jpeg" alt="">
 
+
+
+
+
+
+                </div>
+
+                <div id="contact">
+                  <div id="aboutAnchor"></div>
+                  <hr>
+
+
+                  <h2 id="about" class="center">About + Contact</h2>
+                  <hr>
+                  <div class="flex-split">
+                    <div class="about-container">
+                      <div class="contact-container">
+                        <div class="contact-title-container">
+                          <div class="title">
+                            <p id="contact">Contact + Professional Media</p>
+                          </div>
+                          <div class="contact-row">
+                            <div class="contact-item">
+                              <p>Gerardo Aguilar</p>
+                            </div>
+                            <div class="contact-item"><a href="https://github.com/gaguiIar" target="_blank">GitHub</a></div>
+                          </div>
+                          <div class="contact-row">
+                            <div class="contact-item">
+                              <p>209-761-4692</p>
+                            </div>
+                            <div class="contact-item"><a href="https://www.linkedin.com/in/gerardo-aguilar-aguilera/" target="_blank">LinkedIn</a></div>
+                          </div>
+                          <div class="contact-row">
+                            <div class="contact-item">
+                              <p>gaguilarcs1@gmail.com</p>
+                            </div>
+                            <div class="contact-item"><a href="https://blog.gerardoaguilar.com" target="_blank">Blog </a><span> ● </span><a href="https://geesplace.gerardoaguilar.com" target="_blank">Tumblr </a></div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="containerTitles">
+                        <h3>Experience</h3>
+                        <hr>
+                        <div class="workExperience">
+                          <div class="title">
+                            <div class="company">
+                              <p>NASA - Online</p>
+                            </div>
+                            <div class="timeEmployed">
+                              <p>November 2021 - Present</p>
+                            </div>
+                          </div>
+                          <div class="subtitle">
+                            <p>Aerospace Scholar</p>
+                          </div>
+                          <div class="contact-row">
+                            <div class="experience-body">
+                              <p>Completed a five-week online course on the history of NASA, its current initiatives, and aerospace technology which was then proceeded with a week-long team-building exercise.</p>
+                            </div>
+                          </div>
+
+                          <div class="title">
+                            <div class="company">
+                              <br>
+                              <p>Senator Anna Caballero</p>
+                            </div>
+                            <div class="timeEmployed">
+                              <br>
+                              <p>June 2019- July 2020</p>
+                            </div>
+
+                          </div>
+                          <div class="subtitle">
+                            <p>Intern</p>
+                          </div>
+                          <div class="contact-row">
+                            <div class="experience-body">
+                              <p>Sourced information regarding Census Designated Places and their supporting irrigation districts to curate a visual representation used for pre-legislative work. Utilized Adobe Photoshop, Premiere Pro and Audacity to
+                                produce cross-platform social media posts such as podcasts, thumbnails, Instagram graphics and video media. Created and grew the official Youtube channel to distribute content throughout the constituency more
+                                effectively.</p>
+                            </div>
+
+                          </div>
+                          <hr>
+
+                          <!-- <div class="title">
+                                  <p>Company Name</p>
+                                </div>
+                                <div class="subtitle">
+                                  <p>Position</p>
+                                </div>
+                                  <div class="contact-row">
+                                    <div class="experience-body"><p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p></div>
+                                  </div>
+
+                            <hr> -->
+
+                        </div>
+                      </div>
+                      <div class="containerTitles">
+                        <h3>Education</h3>
+                        <hr>
+                        <div class="education-title-container">
+                          <div class="title">
+                            <p><strong>University of Southern California</strong></p>
+                          </div>
+                        </div>
+                        <div class="contact-row">
+                          <div class="contact-item">
+                            <p>B.S. Computer Science & Business Administration</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">2024</p>
+                          </div>
+                        </div>
+                        <div class="contact-row">
+                          <div class="contact-item">
+                            <p>Minor Communication Design</p>
+                          </div>
+                          <div>
+                            <p style="margin-bottom: 10px">2024</p>
+                          </div>
+                        </div>
+
+                        <div class="relCoursework">
+                          <div class="title">
+                            <div class="course-row">
+                              <div class="contact-item">
+                                <p style="font-size: 1.1em"><strong>Relevent Coursework</strong></p>
+                              </div>
+                              <div>
+                                <p style="font-size: 1.1em"><strong>Semester</strong></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p> Discrete Mathematics</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px">Spring 2022</p>
+                            </div>
+                          </div>
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p>Digital Tools for Design</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px">Spring 2022</p>
+                            </div>
+                          </div>
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p> Web Publishing</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px">Fall 2021</p>
+                            </div>
+                          </div>
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p>Linear Algebra</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px">Summer 2021</p>
+                            </div>
+                          </div>
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p>Programming Concepts</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px">Spring 2021</p>
+                            </div>
+                          </div>
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p>Calculus II</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px">Spring 2021</p>
+                            </div>
+                          </div>
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p>Computer Information Systems</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px text-align: right">Summer 2020</p>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="relCoursework">
+                          <div class="title">
+                            <div class="course-row">
+                              <div class="contact-item">
+                                <p style="font-size: 1.1em"><strong>Student Involvment</strong></p>
+                              </div>
+                              <div>
+                                <p style="font-size: 1.1em"><strong>Time Period</strong></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p>Corpus Collosum</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px">2021-2022</p>
+                            </div>
+                          </div>
+                          <div class="course-row">
+                            <div class="contact-item">
+                              <p>Glimpse of the Globe</p>
+                            </div>
+                            <div>
+                              <p style="margin-bottom: 10px">2021</p>
+                            </div>
+                          </div>
+                          <div id="thanks">
+                            <h1>Thanks for visiting!</h1>
+                          </div>
+                          <div class="footsie">
+                            © 2022 GERARDO AGUILAR-AGUILERA
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="image">
+                      <!-- <img src="SCR-20220303-ioc.png" alt=""> -->
+                      <img src="meMilano.jpeg" alt="">
+
+                    </div>
                   </div>
                 </div>
-              </div>
 
+
+
+              </div>
 
 
 
@@ -1674,22 +1794,14 @@
 
   </div>
 
-
-
-
-
-
-
-
-
   </div>
   <div class="footerMobile">
-    <h1>Last Updated: 05/16/2022</h1>
+    <h1>Last Updated: 07/15/2022</h1>
 
   </div>
   <div class="footer">
     <h1>Los Angeles, CA</h1>
-    <h1>Last Updated: 05/16/2022</h1>
+    <h1>Last Updated: 07/15/2022</h1>
 
   </div>
 
@@ -1735,10 +1847,10 @@
       $('#welcomename').css('color', strn);
       $('.nav li').css('border-color', strn);
       $('.active').css('color', strn);
+      $('a:hover').css('color', strn);
       $('body').css('position', 'unset');
       $('body').css('overflow', 'unset');
 
-      // $("a:hover").css('color', strn);
 
 
     }
@@ -1763,15 +1875,21 @@
         setTimeout(fn3, speed);
       }
     }
-    // import JSConfetti from 'js-confetti'
-    //
-    // const jsConfetti = new JSConfetti()
-    //
-    // jsConfetti.addConfetti()
+    window.addEventListener('scroll', reveal);
 
-
-
-
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal')
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
 
     var input = document.getElementById("color");
     input.addEventListener("keyup", function(event) {
