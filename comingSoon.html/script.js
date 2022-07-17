@@ -1,5 +1,5 @@
 function fetchData() {
-  fetch("http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=gaguilar_&limit=1&api_key=ba36429b5f4e9dd16054bebf04c023b5&format=json")
+  fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=gaguilar_&limit=1&api_key=ba36429b5f4e9dd16054bebf04c023b5&format=json")
     .then(response => {
       if (!response.ok) {
         throw Error("error");
