@@ -7,14 +7,36 @@ function fetchData() {
       return response.json();
     })
     .then(data => {
-      console.log(data.recenttracks);
-      const html = data.products.track.map(user => {
-        return `<p>Song: ${user.name}</p>`
-      });
-      console.log(html);
-      document
-        .querySelector("#artist")
-        .insertAdjacentHTML("afterbegin", "helloooo");
+      console.log(data.recenttracks.track);
+      const dataArray = data.recenttracks.track.map(user => {
+          return `${user.name}:${user.artist['#text']}:${user.image['3']['#text']}`
+        })
+        .join("");
+      console.log(dataArray);
+
+      let parsed = dataArray;
+      const newArray = parsed.split(":");
+      let song = newArray[0];
+      let artist = newArray[1];
+      let artwork = `<img id = "musPhoto"src="${newArray[3]}" alt="">`;
+
+
+      console.log(song);
+      console.log(artist);
+      console.log(artwork);
+
+      const newMsg = `${song} by ${artist}`;
+
+
+
+
+
+
+
+
+
+      document.querySelector(".photo").insertAdjacentHTML("afterbegin", artwork);
+      document.querySelector("#artistSong").insertAdjacentHTML("afterbegin", newMsg);
     })
     .catch(error => {
       console.log(error);
