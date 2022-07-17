@@ -494,7 +494,7 @@
       font-weight: normal;
       text-align: center;
       word-break: break-all;
-      color: Cyan;
+      color: lime;
 
     }
 
@@ -831,7 +831,7 @@
     nav,
     .PortNav,
     a:hover {
-      color: cyan;
+      color: grey;
 
     }
 
@@ -889,7 +889,7 @@
       font-family: "Arch", HelveticaNeue, sans-serif;
       font-weight: normal;
       text-align: center;
-      color: Cyan;
+      color: lime;
     }
 
     #portNav ul li {
@@ -915,7 +915,7 @@
       position: fixed;
       height: 100vh;
       width: 100vw;
-      background: #161719;
+      background: #0d0d0c;
     }
 
     .button {
@@ -1147,8 +1147,8 @@
     .nav li {
       border-radius: 12px;
       border: solid;
-      border-color: cyan;
-      background-color: #161719;
+      border-color: lime;
+      background-color: #0d0d0c;
       padding: 5px;
     }
 
@@ -1176,27 +1176,6 @@
 
 
     .header,
-    .nav {
-      /* background-color: red; */
-      /* backdrop-filter: blur(1px);
-            -webkit-backface-visibility: hidden;
-            -webkit-perspective: 1000;
-            -webkit-transform: translate3d(0,0,0);
-            -webkit-transform: translateZ(0);
-            backface-visibility: hidden;
-            perspective: 1000;
-            transform: translate3d(0,0,0);
-            transform: translateZ(0); */
-    }
-
-    li a {
-      /* padding: 2px;
-            border: solid white;
-            padding-left: 25px;
-            padding-right: 25px;
-            border-radius: 24px;
-            margin-bottom: 20px; */
-    }
 
     #portDir ul {
       margin-right: auto;
@@ -1277,7 +1256,7 @@
       right: 0px;
       text-align: center;
       color: #FFF;
-      background-color: Cyan;
+      background-color: lime;
       border-radius: 10px;
     }
 
@@ -1296,7 +1275,7 @@
 
     #fade-wrapper input,
     button {
-      background-color: #161719;
+      background-color: #0d0d0c;
     }
 
     .footsie {
@@ -1391,7 +1370,7 @@
     <div class="fadecontainer">
       <div id="text">
         <h1>Let's get to know each other...<br>
-          What's your name? <input autocomplete="off" type="text" id="name" placeholder="Xander"><br>Favorite color? <input autocomplete="off" type="text" id="color" placeholder="Cyan, #EE82EE"></h1>
+          What's your name? <input autocomplete="off" type="text" id="name" placeholder="Xander"><br>Favorite color? <input autocomplete="off" type="text" id="color" placeholder="Lime, #EE82EE"></h1>
 
         <button class="button nodeHover" id="button" onclick="fn1(); fn2(); fn3(); " id="continueButton" type="submit">CONTINUE</button>
 
@@ -1934,12 +1913,8 @@
       $('#welcomename').css('color', strn);
       $('.nav li').css('border-color', strn);
       $('.active').css('color', strn);
-      $('a:hover').css('color', strn);
       $('body').css('position', 'unset');
       $('body').css('overflow', 'unset');
-
-
-
     }
 
     function fn2() {
