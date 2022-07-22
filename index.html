@@ -443,7 +443,6 @@
 
     #welcome {
       /* transform:rotate(-10deg); */
-      font-family: HelveticaNeue;
       text-align: center;
 
     }
@@ -457,9 +456,7 @@
     }
 
     #sd {
-      font-family: HelveticaNeue;
       margin-top: 0;
-
       margin-bottom: 45vh;
       text-align: center;
     }
@@ -845,7 +842,6 @@
 
     #welcome {
       /* transform:rotate(-10deg); */
-      font-family: HelveticaNeue;
       text-align: center;
     }
 
@@ -1362,6 +1358,24 @@
       margin-right: 50px;
 
     }
+
+    .itemButton {
+      border: solid 2px grey;
+      border-radius: 5px;
+      background-color: black;
+      font-family: 'Overpass';
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
+    }
+
+    #about {
+      margin: inherit;
+    }
+
+    .dashed hr {
+      border-style: dashed;
+    }
   </style>
 </head>
 
@@ -1458,30 +1472,9 @@
                 <h1 id="welcome">WELCOME</h1>
                 <h1 id="welcomename"></h1>
                 <h2 id="sd"></h2>
-
-
-
               </div>
-
-
-
               <div class="reveal">
-                <div id="about">
-                  <h2 id="about" class="">I'm Gerardo 👋🏼</h2>
-                  <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to listen to music and make art! I'd like to welcome you to my
-                    website where all of my projects live :)</p>
-                  <p id="best">Best,</p>
-                  <img src="sign.svg" style="filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(159deg) brightness(108%) contrast(102%); width:450px; transform: rotate(-2deg); margin-left:10px;" alt="Gerardo signiture">
-                  <br>
-                  <br>
-                  <p class="sub fade-in" style="color:lightgray">[Learn More]<br></p>
-
-
-
-                </div>
-
                 <hr>
-
                 <div id="portNav">
                   <h2 class="center">Portfolio</h2>
                   <hr>
@@ -1516,8 +1509,8 @@
                       <div class="mainIMG">
                         <img class="IWDThumb" src="iwd.jpg" alt="">
                         <div class="flexItemOverlay">
-                          <p class="twentyMarg">Understanding how intimidating web development can be I made Intro to Web Development(IWD), a how-to site that explains the fundamentals of Web development for anyone of any skill level.<br><br> Give it
-                            a look!
+                          <p class="twentyMarg">Understanding how intimidating web development can be I made Intro to Web Development(IWD), a how-to site that explains the fundamentals of Web development for anyone of any skill level.<br><br> <a
+                              class="itemButton nodeHover" target="_blank" href="https://iwd.gerardoaguilar.com/">Visit</a> <span><a class="itemButton nodeHover" target="_blank" href="https://github.com/gaguiIar/WebDevTut">GitHub</a></span>
                           </p>
                         </div>
                       </div>
@@ -1527,9 +1520,9 @@
                       <div class="mainIMG">
                         <img class="ArtifyThumb" src="artify.png" alt="">
                         <div class="flexItemOverlay">
-                          <p class="twentyMarg">Channeling my passion for art and music I built Artify! Artify utalizes Spotify and Google A&C’s respective API’s and condenses your recent listening history into a color pallete and a corresponding
+                          <p class="twentyMarg">Channeling my passion for art and music I built Artify! Artify utalizes Spotify and Google A&C’s respective API’s to condense your recent listening history into a color pallete and a corresponding
                             piece of artwork.
-                            <br><br> Give it a try!
+                            <br><br> <a class="itemButton nodeHover" target="_blank" href="comingSoon.html/comingSoon.html">Visit</a> <span><a class="itemButton nodeHover" target="_blank" href="comingSoon.html/comingSoon.html">GitHub</a></span>
                           </p>
                         </div>
                       </div>
@@ -1567,9 +1560,9 @@
                       <div class="mainIMG">
                         <img class="IWDThumb" src="luggagetag.png" alt="">
                         <div class="flexItemOverlay">
-                          <p class="twentyMarg">Frustrated with the ineffectivness and uninspired nature of the common luggage tag I decided i’d design my own! Learn More about my solution and design process below!
-                            <br><br> Give it
-                            a look!
+                          <p class="twentyMarg">Frustrated with the ineffectivness and uninspired nature of the common luggage tag I decided I’d design my own!<br><br>Learn More about my solution and design process below!
+                            <br><br> <a class="itemButton nodeHover" target="_blank" href="http://luggage.gerardoaguilar.com/">Visit</a> <span><a class="itemButton nodeHover" target="_blank"
+                                href="https://github.com/gaguiIar/luggage">GitHub</a></span>
                           </p>
                         </div>
                       </div>
@@ -1580,7 +1573,8 @@
                         <img class="portfolioWebsiteThumb" src="website.png" alt="">
                         <div class="flexItemOverlay">
                           <p class="twentyMarg">Lots of work and fine tuning went into creating this site and it’s based off an ad I saw on the side of a bus one day! Learn more about my design process and inspiration below.
-                            <br><br> Learn more about this website.
+                            <br><br> <a class="itemButton nodeHover" target="_blank" href="comingSoon.html/comingSoon.html">Learn More</a> <span><a class="itemButton nodeHover" target="_blank"
+                                href="https://github.com/gaguiIar/Portfolio">GitHub</a></span>
                           </p>
                         </div>
                       </div>
@@ -1606,6 +1600,14 @@
                     <div class="about-container">
                       <div class="contact-container">
                         <div class="contact-title-container">
+                          <div id="about">
+                            <h2 id="about" class="">I'm Gerardo 👋🏼</h2>
+                            <p>I'm a programmer and designer pursuing a bachelors in Computer Science and Business Administration from the University of Southern California. In my free time I like to listen to music and make art! I'm glad you've
+                              checked out my website where all of my projects live :)</p>
+
+                          </div>
+
+
                           <div class="title">
                             <p id="contact">Contact + Professional Media</p>
                           </div>
@@ -1630,53 +1632,62 @@
                           </div>
                         </div>
                       </div>
-                      <hr>
                       <div class="containerTitles">
-                        <h3>Experience</h3>
-                        <hr>
-                        <div class="workExperience">
-                          <div class="title">
-                            <div class="company">
-                              <p>NASA - Online</p>
-                            </div>
-                            <div class="timeEmployed">
-                              <p>November 2021 - Present</p>
-                            </div>
-                          </div>
-                          <div class="subtitle">
-                            <p>Aerospace Scholar</p>
-                          </div>
-                          <div class="contact-row">
-                            <div class="experience-body">
-                              <p>Completed a five-week online course on the history of NASA, its current initiatives, and aerospace technology which was then proceeded with a week-long team-building exercise.</p>
-                            </div>
-                          </div>
-
-                          <div class="title">
-                            <div class="company">
-                              <br>
-                              <p>Senator Anna Caballero</p>
-                            </div>
-                            <div class="timeEmployed">
-                              <br>
-                              <p>June 2019- July 2020</p>
-                            </div>
-
-                          </div>
-                          <div class="subtitle">
-                            <p>Intern</p>
-                          </div>
-                          <div class="contact-row">
-                            <div class="experience-body">
-                              <p>Sourced information regarding Census Designated Places and their supporting irrigation districts to curate a visual representation used for pre-legislative work. Utilized Adobe Photoshop, Premiere Pro and Audacity to
-                                produce cross-platform social media posts such as podcasts, thumbnails, Instagram graphics and video media. Created and grew the official Youtube channel to distribute content throughout the constituency more
-                                effectively.</p>
-                            </div>
-
-                          </div>
+                        <div class="dashed">
                           <hr>
+                        </div>
+                        <h3>Experience</h3>
+                        <div class="dashed">
+                          <hr>
+                        </div>
+                      </div>
 
-                          <!-- <div class="title">
+
+                      <div class="workExperience">
+                        <div class="title">
+                          <div class="company">
+                            <p>NASA - Online</p>
+                          </div>
+                          <div class="timeEmployed">
+                            <p>November 2021 - Present</p>
+                          </div>
+                        </div>
+                        <div class="subtitle">
+                          <p>Aerospace Scholar</p>
+                        </div>
+                        <div class="contact-row">
+                          <div class="experience-body">
+                            <p>Completed a five-week online course on the history of NASA, its current initiatives, and aerospace technology which was then proceeded with a week-long team-building exercise.</p>
+                          </div>
+                        </div>
+
+                        <div class="title">
+                          <div class="company">
+                            <br>
+                            <p>Senator Anna Caballero</p>
+                          </div>
+                          <div class="timeEmployed">
+                            <br>
+                            <p>June 2019- July 2020</p>
+                          </div>
+
+                        </div>
+                        <div class="subtitle">
+                          <p>Intern</p>
+                        </div>
+                        <div class="contact-row">
+                          <div class="experience-body">
+                            <p>Sourced information regarding Census Designated Places and their supporting irrigation districts to curate a visual representation used for pre-legislative work. Utilized Adobe Photoshop, Premiere Pro and Audacity to
+                              produce cross-platform social media posts such as podcasts, thumbnails, Instagram graphics and video media. Created and grew the official Youtube channel to distribute content throughout the constituency more
+                              effectively.</p>
+                          </div>
+
+                        </div>
+                        <div class="dashed">
+                          <hr>
+                        </div>
+
+                        <!-- <div class="title">
                                   <p>Company Name</p>
                                 </div>
                                 <div class="subtitle">
@@ -1688,11 +1699,13 @@
 
                             <hr> -->
 
-                        </div>
                       </div>
+
                       <div class="containerTitles">
                         <h3>Education</h3>
-                        <hr>
+                        <div class="dashed">
+                          <hr>
+                        </div>
                         <div class="education-title-container">
                           <div class="title">
                             <p><strong>University of Southern California</strong></p>
