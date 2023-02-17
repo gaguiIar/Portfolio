@@ -10,6 +10,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
 
 <style>
+	@media (min-width: 1300px) {
+		.introtxt {
+			flex-direction: row;
+		}
+
+
+
+	}
+	@media (max-width: 1300px) {
+		.introtxt {
+			flex-direction: column-reverse;
+		}
+
+
+
+	}
 	
 	body {
 		margin: 0;
@@ -35,9 +51,7 @@
 	}
 	.introtxt {
 		display: flex;
-		flex-direction: row;
 		align-items: center;
-		height: 95vh;
 	}
 	#flexitem, #flexitem-2 {
 		width: 50%;
@@ -133,7 +147,6 @@
 		text-align: center;
 	}
 
-
 </style>
 <body>
 
@@ -141,20 +154,18 @@
 	<div class="header">
 		<ul class="nav">
   			<li><a href="https://gerardoaguilar.com/comingSoon.html/comingsoon.html">GERARDO AGUILAR</a></li>
-  			<li><a href="https://gerardoaguilar.com/comingSoon.html/comingsoon.html">About</a></li>
-  			<li><a href="https://gerardoaguilar.com/comingSoon.html/comingsoon.html">Contact</a></li>
 		</ul>
 	</div>
 	<div class="introtxt">
 	<div id="flexitem">
 		<img src="./images/datacompression.png">
-		<p class="caption"> Visualization of data compression with varying compression ratios and levels of perserved information. </p> 
+		<p class="caption"> Visualiztion of data compression with varying compression ratios and levels of perserved information. </p> 
 	</div>
 	<div id="flexitem-2">
 		<div id="title-card">
 			<h1 id="heading">Save the World!</h1>
 			<h2 id="sub-heading">
-				The Connection between Atmospheric Data Compression, superheros–and the world!
+				The Connection between Atmospheric Data Compression and the world!
 			</h2>
 			<p>Have you ever wondered what goes into predicting climate patterns? Or, in layman's terms, how does your iPhone know what to show before you zoom into work on a rainy day? (Editor's Note: Joke–😳). The answer, in part, is tons of data, about hundreds of petabytes of data every year, to be exact. </p>
 			<p> With supercomputing centers running multiple simulations every day, it's no question why experts are looking for new methods of compressing data as efficiently as possible. Researchers at Oxford recently observed promising results applying real information analysis onto data sets before compression, but why should you care? Well, the impact of this approach is an execution of 17x data compression that is nearly lossless. This is exciting stuff if you work with data regularly or are interested in fields that do like Machine Learning, or Data analytics. However, even if you have no interest in atmospheric computational models, the methodologies carried out in this study can also proxy for a lesson on how novelized, seemingly unrelated research can be applied to the world around us, ANY of your interest(s) included. So stay tuned; having read this blog, you'll have a better understanding of data compression and leave with a new perspective you can apply to science and the world around you.</p>
