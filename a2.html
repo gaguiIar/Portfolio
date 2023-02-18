@@ -205,13 +205,13 @@
 		<p>The word "CAB" could be represented by 100001 and the message "AAA," 000000. Both messages contain precisely 6 bits of information; however, because AAA or 000000 contains little entropy, we can say that "AAA" conveys less helpful information than "CAB." This was an idea presented by Claude Shannon in 1948.</p>
 	</div>
 	
-	<p>Researchers applied the logic described by Shannon onto 32-bit real numbers in chaotic dynamical systems and found enough basis to move forward to multimodal statistical variables in Copernicus Atmosphere Monitoring Service (CAMS) data. Astonishingly, the researchers could generalize that 99% of real information was located within the first 7 mantissa bits. While the remaining 1% was distributed across the mantissa bits after that, the entropic data ratio was also increasing marginally. The ratio between accurate and entropic data increasing in favor of entropic data is an issue in itself, as it can lead to rounding errors, further bolstering the basis for removing those bits from the variables altogether. </p>
+	<p>Researchers applied the logic described by Shannon onto 32-bit real numbers in and found enough basis to move forward to statistical variables in Copernicus Atmosphere Monitoring Service (CAMS) data. Astonishingly, the researchers could generalize that 99% of real information for most variables was located within the first 7-10 mantissa bits. This meant, the ratio between accurate and entropic data was increasing in favor of false data further bolstering the basis for removing those bits from the variables altogether. </p>
 	<div>
 		<img class = "center" width = 60% src="./images/fig2.png"> 	
 		<p class="caption">Real Data distrbution in CAMS data </p> 
 	</div> 
 	
-	<p>The researchers propose that understanding most variables contain fewer than 7 bits of real information and that the data set is highly compressible(due to the intrinsic nature of geophysical variables), rounding the bits without real information off facilitates lossless compression with a trade-off of 1% real data loss. </p>
+	<p>Understanding 99% of the real information content was stored in first 7-10 bits of the data types and that the intrinsic nature of geophysical variables makes the data set highly compressible the researchers suggested rounding the bits without real information to 0 and then executued lossless data-compression. The results were incredibly high compression factors with equally impressive real-data retention rates.</p>
 <h1> Atmospheric Data Compression &rarr; Save the World?</h1>
 	<div>
 		<img class = "center" width= 90% src="./images/comic.jpeg"> 
@@ -223,7 +223,7 @@
 </p>
 	<h1 style="text-align: center">Audio/Visual</h1>
 	<div id = "video">
-		<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/qWEHO8b6WsaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/Rq3RNFSkd8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</div>
 </div>
 <div class="header">
